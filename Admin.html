@@ -1,0 +1,146 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <meta name="description" content="premilary test for CCS">
+    <meta anme="author" content="Fantastic Four">
+    <link rel="icon" href="icon.png">
+<head>
+    <style type="text/css">
+        body {
+            background: black;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul.navbar {
+            float: left;
+            opacity: 0.7;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        
+        li.navbar {
+            float: left;
+        }
+        
+        li.navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li.navbar a:active {
+            color: cornflowerblue;
+            background-color: Red;
+        }
+        
+        li.navbar a:hover:not(.active) {
+            color: white;
+            background-color: red;
+        }
+        
+        .active {
+            color: cornflowerblue;
+            background-color: black;
+        }
+        
+        #head1 {
+            float: left;
+            height: 11%;
+            width: 100%;
+            background-color: black;
+            margin: auto;
+            color: whitesmoke;
+        }
+        
+        #center_div {
+            height: 35%;
+            width: 100%;
+            background-image: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            color: white;
+            margin: auto;
+        }
+        
+        #bottom_div {
+            background-color: white;
+            color: black;
+            height: 60%;
+            width: 100%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head1">
+        <ul class="navbar" style="width: 100%">
+            <li class="navbar"><a href="Admin.html">Details</a></li>
+           
+            <li class="navbar"><a href="/home/rachit/Stuff/Web devolopment/backEnd/learning/Profile.html">Profile</a></li>
+            <li class="navbar" style="float : right"><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <div id="center_div">
+        <h1 style="text-align : center;position: relative; top:20%; font-size: 60px ">D E T A I L S</h1>
+    </div>
+
+    <div id="bottom_div">
+
+        <table class="table table-hover table-bordered table-striped" style="text-align:center; position: relative; top:4%;left:10%; width:80%">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">S.No.</th>
+                    <th scope="col">UserName</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Year</th>
+                    <th scope="col">Branch</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Approval</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark01</td>
+                    <td>Mark</td>
+                    <td>1</td>
+                    <td>COE</td>
+                    <td>Qualified</td>
+                    <td id="buttons1"><button type="button" id="buttonA1" onclick="buttonA(id,1)" class="btn btn-success" style="background-color:">Approve</button><button type="button" id="buttonB1" onclick="buttonB(id,1)" class="btn btn-danger">Disapprove</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob01</td>
+                    <td>Jacob</td>
+                    <td>2</td>
+                    <td>COE</td>
+                    <td>Failed</td>
+                    <td id="buttons2"><button type="button" id="buttonA2" onclick="buttonA(id,2)" class="btn btn-success">Approve</button><button type="button" id="buttonB2" onclick="buttonB(id,2)" class="btn btn-danger">Disapprove</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Nidhi01</td>
+                    <td>Nidhi</td>
+                    <td>2</td>
+                    <td>Mechanical</td>
+                    <td>Qualified</td>
+                    <td id="buttons3"><button type="button" id="buttonA3" onclick="buttonA(id,3)" class="btn btn-success">Approve</button><button type="button" id="buttonB3" onclick="buttonB(id,3)" class="btn btn-danger">Disapprove</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        
+    </div>
+    <script src="admin.js" type="text/javascript"></script>
+</body>
+
+</html>

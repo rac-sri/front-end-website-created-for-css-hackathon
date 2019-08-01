@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta name="description" content="premilary test for CCS">
+    <meta anme="author" content="Fantastic Four">
+    <link rel="icon" href="icon.png">
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="/static/Profile.css" type="text/css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style type="text/css">
+        body {
+            background: black;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul.navbar {
+            opacity: 0.7;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: ;
+        }
+        
+        li.navbar {
+            float: left;
+        }
+        
+        li.navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li.navbar a:active {
+            color: cornflowerblue;
+            background-color: Red;
+        }
+        
+        li.navbar a:hover:not(.active) {
+            color: white;
+            background-color: red;
+        }
+        
+        .active {
+            color: cornflowerblue;
+            background-color: black;
+        }
+        
+        #head1 {
+            float: left;
+            height: 8%;
+            width: 100%;
+            background-color: black;
+            margin: auto;
+            color: whitesmoke;
+        }
+        
+        #center_div {
+            height: 34%;
+            width: 100%;
+            background-color: black;
+            color: whitesmoke;
+            margin: auto;
+        }
+        
+        #bottom_div {
+            background-color: grey;
+            color: white;
+            height: 60%;
+            width: 100%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head1">
+        <ul class="navbar" style="width: 100%">
+            <li class="navbar"><a onclick="pass()">Start Quiz</a></li>
+            <li class="navbar"><a href="Rules.html">Rulebook</a></li>
+            <li class="navbar"><a href="Profile.html">Profile</a></li>
+            <li class="navbar" style="float : right"><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+       
+   </div>
+   
+  <br><br><br><br><br>
+<br>
+<br>
+<div class="trans">
+         <br><br><br><br><br><br><br><br><br><br><br>
+   </div>
+ <div id="content">
+   	
+		<ul type="none">
+			<li>Username:<span class="userName"/></li>
+			<li>Email   :<span class="email"/></li>
+			<li>Name    :<span class="Name"/></li>
+			<li>Year:<span class="year"/></li>
+		</ul>
+	</div>
+	
+ <script type="text/javascript" src="pass.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,105 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <meta name="description" content="premilary test for CCS">
+    <meta anme="author" content="Fantastic Four">
+    <link rel="icon" href="icon.png">
+<head>
+    <style type="text/css">
+        body {
+            background: black;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul.navbar {
+            opacity: 0.7;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        
+        li.navbar {
+            float: left;
+        }
+        
+        li.navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li.navbar a:active {
+            color: cornflowerblue;
+            background-color: Red;
+        }
+        
+        li.navbar a:hover:not(.active) {
+            color: white;
+            background-color: red;
+        }
+        
+        .active {
+            color: cornflowerblue;
+            background-color: black;
+        }
+        
+        #head1 {
+            float: left;
+            height: 10%;
+            width: 100%;
+            background-color: black;
+            margin: auto;
+            color: whitesmoke;
+        }
+        
+        #center_div {
+            height: 35%;
+            width: 100%;
+            background-image: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            color: white;
+            margin: auto;
+        }
+        
+        #bottom_div {
+            background-color: whitesmoke;
+            color: black;
+            height: 60%;
+            width: 100%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head1">
+        <ul class="navbar" style="width: 100%">
+            <li class="navbar"><a onclick="pass()">Start Quiz</a></li>
+            <li class="navbar"><a href="Rules.html">Rulebook</a></li>
+            <li class="navbar"><a href="Profile.html">Profile</a></li>
+            <li class="navbar" style="float : right"><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <div id="center_div">
+        <h1 style="text-align : center;position: relative; top:20%; font-size: 60px ">R U L E B O O K</h1>
+    </div>
+
+    <div id="bottom_div">
+
+        <ul style="list-style-type:disc;font-size: 20px; position:relative; left:15%; top:15%">
+            <li>HI</li>
+            <li>Do you think we're awesome?</li>
+            <li>Yes? Then you're damn right, my friend.</li>
+        </ul>
+    </div>
+   <script type="text/javascript" src="pass.js"></script>
+</body>
+
+</html>

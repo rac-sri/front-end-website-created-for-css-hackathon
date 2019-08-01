@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="description" content="premilary test for CCS">
+    <meta anme="author" content="Fantastic Four">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<title>Quiz</title>
+
+	<style type="text/css">
+		#demo{
+			background-color: black !important;
+			color:white !important;
+			position:absolute;
+			left:47%;
+		}
+	        body {
+	            background: black;
+	            width: 100%;
+	            height: 100%;
+	            margin: 0;
+	            padding: 0;
+	        }
+	        
+	        ul.navbar {
+	            float: left;
+	            opacity: 0.7;
+	            list-style-type: none;
+	            margin: 0;
+	            padding: 0;
+	            overflow: hidden;
+	            background-color: black;
+	        }
+	        
+	        li.navbar {
+	            float: left;
+	        }
+	        
+	        li.navbar a {
+	            display: block;
+	            color: white;
+	            text-align: center;
+	            padding: 14px 16px;
+	            text-decoration: none;
+	        }
+	        
+	        li.navbar a:active {
+	            color: cornflowerblue;
+	            background-color: Red;
+	        }
+	        
+	        li.navbar a:hover:not(.active) {
+	            color: white;
+	            background-color: red;
+	        }
+	        
+	        .active {
+	            color: cornflowerblue;
+	            background-color: black;
+	        }
+	        
+	        #head1 {
+	            float: left;
+	            height: 11%;
+	            width: 100%;
+	            background-color: black;
+	            margin: auto;
+	            color: whitesmoke;
+	        }
+	        
+	        #center_div {
+	            height: 35%;
+	            width: 100%;
+	            background-image: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+	            color: white;
+	            margin: auto;
+	        }
+	        
+	        #bottom_div {
+	            background-color: white;
+	            color: black;
+	            height: 60%;
+	            width: 100%;
+	            margin: auto;
+	        }
+
+			.submitbtn {
+			    background-color: #4CAF50;
+			    color: white;
+			    padding: 16px 20px;
+			    margin: 8px 0;
+			    border: none;
+			    cursor: pointer;
+			    width: 100%;
+			    opacity: 0.9;
+			}
+
+			.submitbtn:hover {
+			    opacity: 1;
+			}
+	</style>
+
+	<script>
+				// Set the date we're counting down to
+				var countDownDate = new Date().getTime() + 5400000;
+
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+
+				  // Get todays date and time
+				  var now = new Date().getTime();
+
+				  // Find the distance between now and the count down date
+				  var distance = countDownDate - now;
+
+				  
+				  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                  var s=hours+"h"+minutes+"m"+seconds+"s";
+                  console.log(s);
+				  // Display the result in the element with id="demo"
+				  document.getElementById("demo").innerHTML =hours + "h "
+				  + minutes + "m " + seconds + "s ";
+   
+				  // If the count down is finished, write some text 
+				  if (distance < 0) {
+				    clearInterval(x);
+				    document.getElementById("demo").innerHTML = "EXPIRED";
+				  }
+				}, 1000);
+	</script>
+
+</head>
+
+<body style="background-image: url(https://images.wallpaperscraft.com/image/code_coding_binary_code_abstract_patterns_112140_3840x2400.jpg)">
+	<div class="container">
+		<div id="head1">
+	        <ul class="navbar" style="width: 100%">
+	            <li class="navbar"><a href="">Profile</a></li>
+	            <li class="navbar"><button class="submitbtn" type="button" onclick="login.html">Submit</button></li>
+	        </ul>
+	    </div>
+
+
+	    <div>
+  
+		</div>
+	</div>
+<br><br>
+<div id="timer"><p id="demo"></p></div>
+			
+	
+
+
+</body>
+</html>
